@@ -1,28 +1,107 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    background-color: aliceblue;
-}
-
-h1 {
-    color: white;
-    background-color: black;
-}
-
-img {
+    background-image: url("../images/dark-honeycomb.png");
+    border: none;
     margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header {
+    background-color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    display: block;
+    clear: both;
+    content: normal;
+}
+
+.title {
+    float: left;
+    z-index: 2;
+    background-color: #4caf50;
+    padding: 2px;
+    height: 7%;
+    color: white;
+}
+
+.title h1 {
+    margin: 10px;
+}
+
+.navButtons {
+    padding: 13px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.button {
     float: right;
 }
 
-ul {
-    text-align: left;
+.button a {
+    display: block;
+    padding: 8px;
+    color: black;
+    background-color: lightgray;
+    text-decoration: none;
 }
 
-#fred {
-    color: orange;
+.button a.active {
+    background-color: #4caf50;
+    color: white;
 }
 
-div {
-    background-color: blue;
+.button a:hover:not(.active) {
+    background-color: darkgray;
+}
+
+#aboutMe {
+    width: 960px;
+    margin: auto;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+}
+
+#amHead {
+    background-color: lightgray;
+    padding: 10px;
+    border: 0;
+    border-bottom: 3px;
+    border-color: #4caf50; 
+}
+
+#amPara {
+    margin: 10px;
+}
+
+#profileImg {
     float: left;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer div {
+    background-color: #4caf50;
+    height: 10px;
+}
+
+footer p {
+    padding: 8px
 }

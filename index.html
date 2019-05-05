@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Mason Short - Bio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header>
-            <h1>Mason Short</h1>
-        </header>
-        <img src="masonshort.jpg" alt="Mason Short">
-        <h2>About Me</Menu:context></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id a nemo maxime quae provident omnis ab. Perferendis deleniti sequi perspiciatis id ipsum praesentium voluptatibus minima placeat error similique. Cumque, exercitationem.</p>
-        <h2 >Contact Info</h2>
-        <div>
-            <ul>
-                <li><strong>Email:</strong><a href="ironicallyshort737@hotmail.com">ironicallyshort737@hotmail.com</a></li>
-                <li><strong>GitHub:</strong><a href="https://github.com/LtWilhelm">LtWilhelm</a></li>
-                <li><strong>Portfolio:</strong><a href="">coming soon</a></li>
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mason Short</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+</head>
+<body>
+    <header class="clearfix">
+        <div class="container">
+            <div class="title"> 
+                <!-- If I do an ID here for the title, it still works across all pages that I put the same header on. Should I do this if it's a unique element on each page, or should I keep it as a class? -->
+                <h1>Mason Short</h1>
+            </div>
+                <ul class="navButtons">
+                    <li class="button"><a href="contact.html">Contact</a></li>
+                    <li class="button"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="button"><a class="active" href="index.html">About</a></li>
+                </ul>
         </div>
-    </body>
+    </header>
+    
+    <div id="aboutMe" class="clearfix">
+        <h2 id="amHead">About Me</h2>
+        <img id="profileImg" src="./assets/images/masonshort.jpg" alt="Mason Short">
+        <p id="amPara">Hi, my name is Mason Short. Thank you for visiting my page. Here you can find my portfolio, my contact information, and some information about me! <br><br> I have always loved computers and working with my hands. I built my first computer at the age of 12 and instantly found my niche. Ever since then, my career focus has been related to computers, from technical support, to physical hardware, to programming! <br> <br> My hobbies include miniature model painting, 3D printing and design, and flying and racing RC planes and cars. I also have a passion for technology of all kinds and I make it a point to keep myself up to date on the goings-on in the tech world. <br> <br> I have one pet, my cat River, and I love all animals. There's nothing quite like holding an armful of kittens!</p>
+    </div>
+
+    <footer>
+        <div></div>
+        <p>&copy; Mason Short 2019</p>
+    </footer>
+</body>
 </html>
