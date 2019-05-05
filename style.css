@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    background-color: aliceblue;
+}
+
+h1 {
+    color: white;
+    background-color: black;
+}
+
+img {
+    margin: auto;
+    float: right;
+}
+
+ul {
+    text-align: left;
+}
+
+#fred {
+    color: orange;
+}
+
+div {
+    background-color: blue;
+    float: left;
+}
