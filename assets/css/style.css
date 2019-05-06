@@ -14,6 +14,8 @@ header {
     background-color: lightgray;
     font-family: 'Roboto', sans-serif;
     display: block;
+    z-index: 1;
+    box-shadow: 0px 5px 5px black;
 }
 
 .container {
@@ -27,9 +29,10 @@ header {
     float: left;
     z-index: 2;
     background-color: #4caf50;
-    padding: 2px 0 1px 0;
+    padding: 2px 0 0 0;
     height: 60px;
     color: white;
+    box-shadow: 0px 0px 5px black;
 }
 
 .title h1 {
@@ -37,96 +40,118 @@ header {
 }
 
 .navButtons {
+    margin: 0;
     list-style-type: none;
+    float: right;
 }
 
-.button {
+.navButtons li {
     float: right;
     display: block;
     margin-top: 22px;
     background-color: lightgray;
-    border-right: 1px solid darkgray;
 }
 
-.button a {
+.navButtons a {
+    margin: 0 5px 0 5px;
     color: black;
     text-decoration: none;
     padding: 22px 10px 21px 10px;
 }
 
-.button a.active {
-    margin-top: 0;
+.navButtons a.active {
     background-color: #4caf50;
     color: white;
+    box-shadow: 0 0 5px black;
 }
 
-.button a:hover:not(.active) {
+.navButtons a:hover:not(.active) {
     background-color: darkgray;
 }
 
-#aboutMe {
+.navButtons li:not(:first-child)::after {
+    display: inline;
+    content: "|";
+    color: darkgray;
+}
+
+.body {
     width: 960px;
     margin: auto;
     background-color: white;
     font-family: 'Roboto', sans-serif;
     margin-top: 8px;
+    clear: both;
 }
 
-.contactMe {
-    width: 960px;
-    margin: auto;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 8px;
-}
-
-.contactMe h2 {
+.body h2 {
     background-color: lightgray;
     padding: 20px;
+    margin: 0;
+    display: block;
 }
 
-.contactMe h3 {
-    margin-left: 40px;
-}
-
-.contactMe #ea {
-    width: 25%;
-    margin-left: 40px;
-}
-
-.contactMe h4 {
-    margin-left: 40px;
-}
-
-.contactMe #message {
-    width: 50%;
-    margin-left: 40px;
-    padding: 150px;
-    margin-bottom: 40px;
-}
-
-#amHead {
-    background-color: lightgray;
-    padding: 10px;
-    border: 0;
-    border-bottom: 3px;
-    border-color: #4caf50; 
-}
-
-#amPara {
-    margin: 10px;
-}
-
-#profileImg {
+.body img {
     float: left;
     margin: 10px;
+    height: 200px;
+    width: auto;
+}
+
+.body p {
+    margin-left: 20px;
+}
+
+#am {
+    float: left;
+    width: 720px;
+}
+
+.links {
+    float: left;
+    width: 220px;
+    margin: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.links ul {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+.links li {
+    height: 40px;
+    margin: 0;
+}
+
+.links img {
+    margin: 0;
+    height: 40px;
+    width: auto;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links p {
+    padding: 12px;
+}
+
+#ea {
+    margin-left: 40px;
+    width: 25%;
 }
 
 footer {
+    width: 100%;
     text-align: center;
     background-color: lightgray;
     position: fixed;
-    width: 100%;
     bottom: 0;
 }
 
