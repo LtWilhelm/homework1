@@ -138,6 +138,10 @@ header {
     color: black;
 }
 
+.links a:hover {
+    text-shadow: 0 0 2px #4caf50, 0 0 1px white;
+}
+
 .links p {
     padding: 12px;
 }
