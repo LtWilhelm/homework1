@@ -1,5 +1,5 @@
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
@@ -14,7 +14,8 @@ body {
     clear: both;
     display: block;
 }
-
+/* =================================================== */
+/* Header and Title box */
 header {
     background-color: lightgray;
     display: block;
@@ -25,15 +26,13 @@ header {
 .container {
     width: 960px;
     margin: auto;
-    /* display: block;
-    position: relative; */
+    position: relative;
 }
 
 .title {
     float: left;
     z-index: 2;
     background-color: #4caf50;
-    padding: 2px 0 0 0;
     height: 60px;
     color: white;
     box-shadow: 0px 0px 5px black;
@@ -42,18 +41,21 @@ header {
 .title h1 {
     margin: 10px;
 }
+/* =================================================== */
 
-/* Style of navigation buttons */
+/* =================================================== */
+/* Navigation Bar */
 .navButtons {
     margin: 0;
+    padding: 0;
     list-style-type: none;
     float: right;
 }
 
 .navButtons li {
-    float: right;
-    /* display: inline; */
-    margin-top: 22px;
+    float: left;
+    display: block;
+    margin-top: 20px;
     background-color: lightgray;
 }
 
@@ -61,7 +63,7 @@ header {
     margin: 0 5px 0 5px;
     color: black;
     text-decoration: none;
-    padding: 22px 10px 21px 10px;
+    padding: 20px 10px 21px 10px;
 }
 
 .navButtons a.active {
@@ -74,19 +76,22 @@ header {
     background-color: darkgray;
 }
 
-.navButtons li:not(:first-child)::after {
+.navButtons li:not(:last-child)::after {
     display: inline;
     content: "|";
     color: darkgray;
 }
+/* =================================================== */
 
-/* Style of main content */
+/* =================================================== */
+/* Main Section */
 .body {
     width: 960px;
     margin: auto;
     background-color: white;
     font-family: 'Roboto', sans-serif;
     margin-top: 8px;
+    margin-bottom: 85px;
     clear: both;
 }
 
@@ -107,12 +112,18 @@ header {
 .body p {
     margin-left: 20px;
 }
+/* =================================================== */
 
+/* =================================================== */
+/* About Me */
 #am {
     float: left;
     width: 720px;
 }
+/* =================================================== */
 
+/* =================================================== */
+/* Links Aside */
 .links {
     float: left;
     width: 220px;
@@ -148,15 +159,69 @@ header {
     text-shadow: 0 0 2px #4caf50, 0 0 1px white;
 }
 
+.links a:hover::after {
+    box-shadow: 0 0 3px black;
+}
+
 .links p {
     padding: 12px;
 }
+/* =================================================== */
 
-#ea {
-    margin-left: 40px;
-    width: 25%;
+/* =================================================== */
+/* Portfolio */
+.portfolio {
+    display: grid;
+    grid-template-columns: 30% 30%;
 }
 
+.portfolio a {
+    display: inline;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    margin: 10PX;
+}
+
+.portfolio a:hover {
+    box-shadow: 0 0 5px #4caf50;
+}
+
+.portfolio img {
+    margin: 0;
+}
+
+.overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0 0 5px black;
+    color: white;
+}
+/* =================================================== */
+
+/* =================================================== */
+/* Contact */
+.contact {
+    margin: 10px 0 10px 20px;
+    padding-bottom: 20px;
+}
+
+#message  {
+    width: 700px;
+    height: 300px;
+    resize: none;
+    padding: 10px 10px;
+}
+/* =================================================== */
+
+/* =================================================== */
+/* Footer Layout */
 footer {
     width: 100%;
     text-align: center;
@@ -173,3 +238,4 @@ footer div {
 footer p {
     padding: 8px
 }
+/* =================================================== */

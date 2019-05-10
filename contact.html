@@ -14,25 +14,28 @@
     <header class="clearfix">
         <div class="container">
             <div class="title"> 
-                        <!-- If I do an ID here for the title, it still works across all pages that I put the same header on. Should I do this if it's a unique element on each page, or should I keep it as a class? -->
-                        <h1>Mason Short</h1>
-        </div>
+                <h1>Mason Short</h1>
+            </div>
             <ul class="navButtons">
-                <li class="button"><a class="active" href="contact.html">Contact</a></li>
-                <li class="button" id="center"><a href="portfolio.html">Portfolio</a></li>
                 <li class="button"><a href="index.html">About</a></li>
-            <ul>
+                <li class="button"><a href="portfolio.html">Portfolio</a></li>
+                <li class="button"><a class="active" href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </header>
-
-    <div class="body">
+        
+    <section class="body">
         <h2>Contact Me</h2>
-        <h3>Email Address:</h3>
-        <input id="ea" type="email">
-        <h4>Message:</h4>
-        <input id="message" type="text">
-        <button>Send</button>
-    </div>
+        <form class="contact">
+            <h3>Name</h3>
+            <input id="name" name="name" type="text" autofocus>
+            <h3>Email Address:</h3>
+            <input id="ea" name="emailaddress" type="email">
+            <h3>Message:</h3>
+            <textarea name="message" id="message"></textarea>
+            <br><input type="submit" value="Send">
+        </form>
+    </section>
     
     <footer>
         <div></div>
